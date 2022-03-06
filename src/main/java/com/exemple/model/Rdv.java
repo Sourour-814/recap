@@ -1,6 +1,6 @@
 package com.exemple.model;
 
-import java.util.Date;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +19,7 @@ public class Rdv {
 	@NotBlank @Lob
     private String description;
 	@NotBlank
-    private Date date;
+    private String date;
 	public Rdv() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -42,10 +42,10 @@ public class Rdv {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 	
