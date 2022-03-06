@@ -22,6 +22,8 @@ import com.exemple.service.AdminCrudImplement;
 public class AdminContoller {
 	@Autowired
 	 AdminCrudImplement adminCrudImplement;
+	
+	@GetMapping
 	public List<Admin> findall()
 	{
 	return adminCrudImplement.showAdmins();	
